@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind cdn Link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Money Master</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-cyan-500 text-5xl text-center font-bold mt-12">
+        Money Master &#128176; !!!
+      </h1>
+    </header>
+    <section class="mt-8 px-16 mx-auto border-[3px] rounded-lg p-8">
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div>
+          <img
+            class="object-cover h-[620px] rounded-lg"
+            src="./images/money-hero.png"
+            alt="hero images"
+          />
+        </div>
+        <div class="shadow-xl rounded-lg">
+          <div class="drop-shadow-lg">
+            <h3 class="text-slate-800 text-center text-xl mb-5 font-bold">
+              Income
+            </h3>
+            <div class="flex gap-5 justify-center">
+              <span class="text-slate-600 text-lg font-medium"> Income: </span>
+              <input
+                id="income-field"
+                class="bg-slate-200 pl-2 form-control w-89/12 py-2 rounded-md focus:outline-1 outline-sky-500"
+                type="text"
+                placeholder="Your Income"
+              />
+            </div>
+            <h3 class="text-slate-800 text-center text-xl my-5 font-bold">
+              Expenses
+            </h3>
+            <div class="flex gap-10 mt-4 justify-center">
+              <span class="text-slate-600 text-lg font-medium"> Food: </span>
+              <input
+                id="food-field"
+                class="bg-slate-200 pl-2 form-control w-89/12 py-2 rounded-md focus:outline-1 outline-sky-500"
+                type="text"
+                placeholder="Your Income"
+              />
+            </div>
+            <div class="flex gap-11 mt-4 justify-center">
+              <span class="text-slate-600 text-lg font-medium"> Rent: </span>
+              <input
+                id="rent-field"
+                class="bg-slate-200 pl-2 form-control w-89/12 py-2 rounded-md focus:outline-1 outline-sky-500"
+                type="text"
+                placeholder="Your Income"
+              />
+            </div>
+            <div class="flex gap-5 mt-4 justify-center">
+              <span class="text-slate-600 text-lg font-medium"> Clothes: </span>
+              <input
+                id="clothe-field"
+                class="bg-slate-200 pl-2 form-control w-89/12 py-2 rounded-md focus:outline-1 outline-sky-500"
+                type="text"
+                placeholder="Your Income"
+              />
+            </div>
+            <div class="text-center">
+              <button
+                id="calculate-btn"
+                class="text-white font-semibold bg-sky-500 py-2 px-8 rounded-md mt-5"
+              >
+                Calculate
+              </button>
+              <h3 class="text-slate-800 text-center text-xl my-4 font-bold">
+                Total Expenses: <span id="total-expense">0</span> TK
+              </h3>
+              <h3 class="text-slate-800 text-center text-xl my-4 font-bold">
+                Balance: <span id="balance">0</span> TK
+              </h3>
+            </div>
+            <div class="flex gap-5 mt-4 items-center justify-center">
+              <span class="text-slate-600 text-lg font-medium"> Save: </span>
+              <input
+                id="save-field"
+                class="bg-slate-200 pl-2 w-32 rounded-md focus:outline-1 outline-sky-500"
+                style="height: 40px"
+                type="text"
+                placeholder="Save percentage"
+              />
+              <span class="text-slate-500">%</span>
+              <button
+                id="save-btn"
+                class="text-white font-semibold bg-sky-500 py-2 px-8 rounded-md self-center"
+              >
+                Save
+              </button>
+            </div>
+            <div class="text-center">
+              <h3 class="text-slate-800 text-center text-xl my-4 font-bold">
+                Saving Amount: <span id="saving-amount">0</span> TK
+              </h3>
+              <h3 class="text-slate-800 text-center text-xl my-4 font-bold">
+                Remaining Balance: <span id="remaining-balance">0</span> TK
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/money.js"></script>
+  </body>
+</html>
